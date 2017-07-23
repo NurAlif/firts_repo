@@ -1,0 +1,16 @@
+/*
+    start.me -- Stand-alone MakeMe file
+ */
+
+Me.load({
+    targets: {
+        I2Cdev: {
+    	    type: 'lib',
+    	    sources: '*.c',
+    	    static: true,
+        },
+        work: {
+            action: "print('Do work')",
+        },
+    },
+})
